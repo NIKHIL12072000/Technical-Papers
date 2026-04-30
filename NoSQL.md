@@ -111,7 +111,7 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (id, name, age)
-VALUES (uuid(), 'Nikhil', 25);
+VALUES (uuid(), 'Sahithi', 23);
 ```
 
 ---
@@ -126,7 +126,7 @@ VALUES (uuid(), 'Nikhil', 25);
 * **Advantages of using it:** Provides ultra-fast read/write operations, low latency, and supports multiple data structures.
 
 ``` bash
-SET user:1 "Nikhil"
+SET user:1 "Sahithi"
 GET user:1 ```
 ```
 

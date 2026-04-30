@@ -20,10 +20,6 @@ Current SQL Databases are causing the performance and scaling issues which are c
 3. Single point of failure in primary-replica architecture: Failure of the primary node can disrupt the entire system if failover mechanisms are not properly implemented.
 4. Schema migration causing downtime: Changing database schema often requires downtime, impacting system availability.
 
-## What is NoSQL?
-
-In modern applications, performance and scalability are critical requirements. Traditional relational databases sometimes struggle to handle large volumes of unstructured or rapidly growing data. NoSQL databases are designed to overcome these limitations by providing flexible schemas, horizontal scaling, and high availability. They are widely used in applications such as real-time analytics, big data processing, and distributed systems.
-
 ```
         +------------------+
         |   Application    |
@@ -34,8 +30,16 @@ In modern applications, performance and scalability are critical requirements. T
         |   (Single Node)  |
         +------------------+
                 |
-        Upgrade CPU/RAM (Vertical Scaling)
+        Upgrade CPU/RAM 
 
+        Vertical Scaling in Traditional SQL
+```
+
+## What is NoSQL?
+
+In modern applications, performance and scalability are critical requirements. Traditional relational databases sometimes struggle to handle large volumes of unstructured or rapidly growing data. NoSQL databases are designed to overcome these limitations by providing flexible schemas, horizontal scaling, and high availability. They are widely used in applications such as real-time analytics, big data processing, and distributed systems.
+
+```
         +------------------+
         |   Application    |
         +------------------+
@@ -45,7 +49,7 @@ In modern applications, performance and scalability are critical requirements. T
 |  Node 1    | |  Node 2    | |  Node 3    |
 +------------+ +------------+ +------------+
 
-        Distributed Data + Load Balancing
+        Horizontal Scaling in NoSQL (Distributed Data + Load Balancing
 ```
 
 NoSQL stands for "Not Only SQL". These databases do not rely on fixed table structures and instead support various data models such as key-value, document, column-family, graph, vector. This flexibility allows developers to store and retrieve data efficiently based on application needs.
